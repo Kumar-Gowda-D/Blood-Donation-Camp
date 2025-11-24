@@ -1,0 +1,813 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>27th Annual Blood Donation Camp — Action Starts With Donation</title>
+    <meta name="description"
+        content="27th Annual Blood Donation Camp — Donate Blood, Save Lives. Register via Google Form." />
+
+    <!-- Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- GSAP -->
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/a2d9f3b8d6.js" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body class="bg-rose-50 text-gray-900 antialiased">
+    <!-- NAV -->
+    <header class="fixed w-full z-50 bg-white/90 backdrop-blur-sm border-b border-white/60">
+        <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
+            <a href="#hero" class="flex items-center gap-3">
+                <div
+                    class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#B30024] to-[#E60033] flex items-center justify-center shadow-md">
+                    <i class="fas fa-tint text-white text-lg"></i>
+                </div>
+                <div class="hidden sm:block">
+                    <div class="text-sm font-semibold" style="font-family:Poppins,Inter;">27th Annual</div>
+                    <div class="text-xs text-gray-500 -mt-0.5">Blood Donation Camp</div>
+                </div>
+            </a>
+
+            <nav class="hidden md:flex items-center gap-6 text-sm">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#chief" class="nav-link">Chief Guest</a>
+                <a href="#details" class="nav-link">Event</a>
+                <a href="#register" class="nav-link">Register Info</a>
+                <a href="#why" class="nav-link">Why Donate</a>
+                <a href="#sponsors" class="nav-link">Sponsors</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#faq" class="nav-link">FAQ</a>
+            </nav>
+
+            <div class="flex items-center gap-3">
+                <!-- CHANGE this placeholder link to your real Google Form -->
+                <a id="navRegister" href="https://forms.gle/your-google-form" target="_blank" rel="noopener"
+                    class="hidden sm:inline-flex items-center gap-2 px-4 py-2 rounded-full font-semibold bg-gradient-to-r from-[#B30024] to-[#E60033] text-white shadow-lg">
+                    <i class="fas fa-hand-holding-medical"></i> Register
+                </a>
+
+                <button id="mobileBtn" class="md:hidden p-2 rounded-lg bg-white shadow-sm" aria-label="Open menu">
+                    <i class="fas fa-bars text-gray-800"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- mobile nav -->
+        <div id="mobileMenu" class="hidden md:hidden bg-white/95 border-t border-gray-100">
+            <div class="px-5 py-4 flex flex-col gap-2">
+                <a href="#hero" class="py-2">Home</a>
+                <a href="#chief" class="py-2">Chief Guest</a>
+                <a href="#details" class="py-2">Event</a>
+                <a href="#register" class="py-2">Register Info</a>
+                <a href="#why" class="py-2">Why Donate</a>
+                <a href="#sponsors" class="py-2">Sponsors</a>
+                <a href="#gallery" class="py-2">Gallery</a>
+                <a href="#faq" class="py-2">FAQ</a>
+                <a href="https://forms.gle/your-google-form" target="_blank" rel="noopener"
+                    class="py-2 font-semibold text-[#B30024]">Register (Form)</a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <!-- HERO -->
+        <section id="hero" class="min-h-screen flex items-center pt-20 overflow-hidden">
+
+            <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
+
+                <!-- left -->
+                <div class="space-y-6">
+
+                    <!-- Updated NSS Logo + Title -->
+                    <div class="flex items-center gap-6" data-anim>
+                        <img src="logo.png" alt="NSS RIT Logo" class="w-80 h-80 object-contain">
+
+                        <div>
+                            <div class="text-3xl font-extrabold text-[#B30024] leading-tight">
+                                National Service Scheme, RIT
+                            </div>
+                            <div class="text-xl font-semibold text-gray-700 -mt-1">
+                                2024–2025
+                            </div>
+                            <br>
+                            <div>Together We Act, Together We Impact</div>
+                        </div>
+                    </div>
+                    <!-- End Update -->
+                    <h1 class="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight hero-title" data-anim>
+                        27th Blood Donation Camp
+                    </h1>
+
+                    <p class="mt-4 text-lg text-gray-700 max-w-xl" data-anim>
+                        <strong class="text-[#B30024]">Action starts with donation.</strong>
+                        Take the first step today and be the reason someone gets a second chance at life.
+                    </p>
+
+                    <div class="mt-6 text-sm text-gray-600 space-y-1" data-anim>
+                        <div><strong>Date:</strong> Friday, December 05, 2025</div>
+                        <div><strong>Venue:</strong> ESB basement, MSRIT</div>
+                    </div>
+                </div>
+
+                <!-- right premium card -->
+                <div class="hero-stats-card overflow-hidden shadow-2xl border border-gray-100 bg-white transform-gpu rounded-3xl"
+                    data-anim>
+
+                    <div class="p-8 bg-gradient-to-br from-white to-[#FFE6EB]">
+
+                        <!-- ICON + TARGET -->
+                        <div class="flex items-center gap-6">
+                            <div
+                                class="w-20 h-20 rounded-full bg-gradient-to-br from-[#B30024] to-[#E60033] flex items-center justify-center text-white text-2xl shadow-md">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-gray-500">Target</div>
+                                <div class="text-2xl font-extrabold">1,000+ Units</div>
+                            </div>
+                        </div>
+
+                        <!-- VOLUNTEERS + MEDICAL TEAM -->
+                        <div class="mt-6 grid grid-cols-2 gap-4">
+                            <div class="p-4 rounded-xl bg-white border border-gray-100">
+                                <div class="text-xs text-gray-500">Volunteers</div>
+                                <div class="font-semibold text-gray-800">500+</div>
+                            </div>
+                            <div class="p-4 rounded-xl bg-white border border-gray-100">
+                                <div class="text-xs text-gray-500">Medical Team</div>
+                                <div class="font-semibold text-gray-800">12+</div>
+                            </div>
+                        </div>
+
+                        <!-- COUNTDOWN TIMER (NEW) -->
+                        <div class="mt-8">
+                            <div class="text-xs text-gray-500 mb-2">Countdown</div>
+
+                            <div id="countdown" class="grid grid-cols-4 gap-3 text-center">
+
+                                <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm">
+                                    <div id="days" class="text-xl font-extrabold text-[#B30024]">00</div>
+                                    <div class="text-[10px] text-gray-600 mt-1 uppercase">Days</div>
+                                </div>
+
+                                <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm">
+                                    <div id="hours" class="text-xl font-extrabold text-[#B30024]">00</div>
+                                    <div class="text-[10px] text-gray-600 mt-1 uppercase">Hours</div>
+                                </div>
+
+                                <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm">
+                                    <div id="minutes" class="text-xl font-extrabold text-[#B30024]">00</div>
+                                    <div class="text-[10px] text-gray-600 mt-1 uppercase">Minutes</div>
+                                </div>
+
+                                <div class="bg-white rounded-xl p-3 border border-gray-100 shadow-sm">
+                                    <div id="seconds" class="text-xl font-extrabold text-[#B30024]">00</div>
+                                    <div class="text-[10px] text-gray-600 mt-1 uppercase">Seconds</div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- FOOTNOTE -->
+                        <div class="mt-6 text-xs text-gray-600">
+                            All equipment is sterile & single-use. Medical staff onsite.
+                        </div>
+                    </div>
+
+                    <div class="p-4 bg-white/80 border-t border-gray-100 text-xs text-gray-600">
+                        Certificates & refreshments for donors.
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CHIEF GUEST -->
+        <section id="chief" class="py-20 bg-rose-50">
+            <div class="max-w-6xl mx-auto px-6" data-section>
+                <h2 class="text-4xl font-extrabold text-center text-[#B30024] mb-10" style="font-family:Poppins,Inter;">
+                    Chief Guest
+                </h2>
+                <div
+                    class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+
+                    <div class="flex items-center justify-center md:justify-start">
+                        <div id="chiefPhoto"
+                            class="w-44 h-44 rounded-full ring-4 ring-white shadow-xl overflow-hidden transform-gpu">
+                            <img src="blank.png" alt="Chief Guest" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-2">
+                        <h3 class="text-2xl font-extrabold mt-2" style="font-family:Poppins,Inter;">
+                            <pre>Soon ....</pre>
+                        </h3>
+                        <div class="text-sm text-gray-600 mt-1"></div>
+
+                        <p class="mt-4 text-gray-700 max-w-2xl"> </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPECIAL INVITIES -->
+        <section id="chief" class="py-20 bg-rose-50">
+            <div class="max-w-6xl mx-auto px-6" data-section>
+
+                <!-- SECTION HEADING -->
+                <h2 class="text-4xl font-extrabold text-center text-[#B30024] mb-10" style="font-family:Poppins,Inter;">
+                    Special Invitees
+                </h2>
+
+                <div
+                    class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 grid grid-cols-1 md:grid-cols-3 gap-6 items-center">
+
+                    <!-- 1st Invitee -->
+                    <div class="flex items-center justify-center md:justify-start">
+                        <div id="chiefPhoto"
+                            class="w-44 h-44 rounded-full ring-4 ring-white shadow-xl overflow-hidden transform-gpu">
+                            <img src="seetharam.jpeg" alt="Chief Guest" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h3 class="text-2xl font-extrabold mt-2" style="font-family:Poppins,Inter;">
+                            <pre>Dr. M. R. Seetharam</pre>
+                        </h3>
+                        <div class="text-sm text-gray-600 mt-1">Chairman, Gokula Education Foundation</div>
+                        <div class="text-sm text-gray-600 mt-1">Former Cabinet Minister and Member of</div>
+                        <div class="text-sm text-gray-600 mt-1">Legislative Council, Govt of Karnataka</div>
+                    </div>
+
+                    <!-- 2nd Invitee -->
+                    <div class="flex items-center justify-center md:justify-start">
+                        <div id="chiefPhoto"
+                            class="w-44 h-44 rounded-full ring-4 ring-white shadow-xl overflow-hidden transform-gpu">
+                            <img src="KODANDARAM.jpg" alt="Chief Guest" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h3 class="text-2xl font-extrabold mt-2" style="font-family:Poppins,Inter;">
+                            <pre>Sri. M. R. Kodandaram</pre>
+                        </h3>
+                        <div class="text-sm text-gray-600 mt-1">Director, RIT</div>
+                    </div>
+
+                    <!-- 3rd Invitee -->
+                    <div class="flex items-center justify-center md:justify-start">
+                        <div id="chiefPhoto"
+                            class="w-44 h-44 rounded-full ring-4 ring-white shadow-xl overflow-hidden transform-gpu">
+                            <img src="naidu.jpg" alt="Chief Guest" class="w-full h-full object-cover" />
+                        </div>
+                    </div>
+                    <div class="md:col-span-2">
+                        <h3 class="text-2xl font-extrabold mt-2" style="font-family:Poppins,Inter;">
+                            <pre>Dr. N. R. V. Naidu</pre>
+                        </h3>
+                        <div class="text-sm text-gray-600 mt-1">Principal, RIT</div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EVENT DETAILS -->
+        <section id="details" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center" data-section>
+                <div class="p-8 bg-white rounded-2xl border border-gray-100 shadow-sm" data-anim>
+                    <h3 class="text-xl font-semibold text-gray-900">Event Details</h3>
+                    <div class="mt-6 space-y-4 text-gray-700">
+                        <div class="flex gap-4">
+                            <div class="icon-plain"><i class="fas fa-calendar-day text-[#B30024]"></i></div>
+                            <div>
+                                <div class="text-sm text-gray-500">Date</div>
+                                <div class="font-medium">Friday, December 05, 2025</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="icon-plain"><i class="fas fa-clock text-[#B30024]"></i></div>
+                            <div>
+                                <div class="text-sm text-gray-500">Time</div>
+                                <div class="font-medium">9:00 AM — 5:00 PM</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="icon-plain"><i class="fas fa-map-marker-alt text-[#B30024]"></i></div>
+                            <div>
+                                <div class="text-sm text-gray-500">Venue</div>
+                                <div class="font-medium">ESB basement, MSRIT</div>
+                            </div>
+                        </div>
+
+                        <div class="flex gap-4">
+                            <div class="icon-plain"><i class="fas fa-users text-[#B30024]"></i></div>
+                            <div>
+                                <div class="text-sm text-gray-500">Organizers</div>
+                                <div class="font-medium">National Service Scheme, RIT</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rounded-2xl overflow-hidden shadow-sm" data-anim>
+                    <div class="w-full h-72 bg-white flex items-center justify-center">
+                        <div class="text-center text-gray-600">
+                            <div
+                                class="mb-3 w-20 h-20 rounded-full bg-[#FFE6EB] flex items-center justify-center text-[#B30024]">
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="font-medium">Venue Map</div>
+                            <div class="text-sm mt-2">
+                                <iframe
+                                    src="https://www.google.com/maps?q=Ramaiah+Institute+of+Technology,+MSRIT+Engineering+College,+Bengaluru&z=16&output=embed"
+                                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- REGISTER -->
+        <section id="register" class="py-20 bg-rose-50">
+            <div class="max-w-5xl mx-auto px-6" data-section>
+                <div class="bg-white rounded-3xl shadow-lg p-8" data-anim>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+                        <div>
+                            <div class="text-sm text-[#B30024] font-medium"></div>
+                            <h3 class="text-2xl font-extrabold text-gray-900 mt-2">Register</h3>
+                            <p class="mt-3 text-gray-600">Registration is handled via a Google Form. Click the
+                                <strong>Register</strong> button in the navigation to open the form in a new tab.
+                            </p>
+
+                            <div class="mt-6">
+                                <h4 class="text-lg font-semibold text-gray-900">Eligibility to Donate</h4>
+                                <ul class="mt-3 space-y-2 text-gray-700 list-disc list-inside">
+                                    <li>Above <strong>55 kg</strong> of weight</li>
+                                    <li>No medicines in the <strong>last 10 days</strong></li>
+                                    <li>Currently not having <strong>cold, cough or fever</strong></li>
+                                    <li>No tattoos in the <strong>last 12 months</strong></li>
+                                    <li>No alcohol or cigarette in the <strong>last 12 hours</strong></li>
+                                    <li>Minimum <strong>3 months</strong> gap since last donation</li>
+                                    <li><strong>1 week away</strong> from menstrual cycle (for girls)</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center justify-center">
+                            <div class="p-6 rounded-xl bg-white border border-gray-100 text-center shadow-sm">
+                                <div class="text-sm text-gray-600">To register, click the</div>
+                                <a href="https://forms.gle/your-google-form" target="_blank" rel="noopener"
+                                    class="mt-4 inline-flex items-center gap-2 px-4 py-3 rounded-full bg-[#B30024] text-white font-semibold">
+                                    Open Registration Form
+                                </a>
+                                <div class="mt-3 text-xs text-gray-500">Opens in a new tab</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="live-updates" style="background: #fdecef; padding: 80px 0;">
+            <div class="container mx-auto px-6">
+
+                <h2 style="
+          font-size: 42px; 
+          font-weight: 700; 
+          color: #a70021; 
+          margin-bottom: 40px;
+          text-align: center;
+      ">
+                    Live Updates
+                </h2>
+
+                <div style="
+          background: #ffffff;
+          padding: 30px;
+          border-radius: 24px;
+          box-shadow: 0px 4px 25px rgba(0,0,0,0.08);
+          max-width: 900px;
+          margin: auto;
+          display: flex;
+          gap: 25px;
+          align-items: center;
+          flex-wrap: wrap;
+      ">
+
+                    <!-- Update Image -->
+                    <img src="day1-1.jpg" alt="Live Update" style="
+                  width: 260px;
+                  border-radius: 18px;
+                  object-fit: cover;
+              ">
+
+                    <!-- Text Description -->
+                    <div style="flex: 1;">
+                        <h3 style="
+                  font-size: 26px; 
+                  font-weight: 700;
+                  color: #222;
+                  margin-bottom: 10px;">
+                            Creativity
+                        </h3>
+
+                        <p style="
+                  font-size: 18px;
+                  color: #444;
+                  line-height: 1.6;">
+                            "Our NSS volunteers showcased their creativity through beautifully crafted works that 
+                            reflected dedication, imagination, and teamwork. Their efforts added a vibrant touch 
+                            to today’s activities."
+                        </p>
+                    </div>
+
+                </div>
+                <br>
+                <div style="
+          background: #ffffff;
+          padding: 30px;
+          border-radius: 24px;
+          box-shadow: 0px 4px 25px rgba(0,0,0,0.08);
+          max-width: 900px;
+          margin: auto;
+          display: flex;
+          gap: 25px;
+          align-items: center;
+          flex-wrap: wrap;
+      ">
+
+                    <!-- Update Image -->
+                    <img src="day-1-2.jpg" alt="Live Update" style="
+                  width: 260px;
+                  border-radius: 18px;
+                  object-fit: cover;
+              ">
+
+                    <!-- Text Description -->
+                    <div style="flex: 1;">
+                        <h3 style="
+                  font-size: 26px; 
+                  font-weight: 700;
+                  color: #222;
+                  margin-bottom: 10px;">
+                            Flashmob
+                        </h3>
+
+                        <p style="
+                  font-size: 18px;
+                  color: #444;
+                  line-height: 1.6;">
+                            "Our energetic NSS volunteers performed a lively flashmob that spread excitement and 
+                            positivity across the campus. Their coordination and enthusiasm made the event truly 
+                            memorable."
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <!-- WHY DONATE -->
+        <section id="why" class="py-20 bg-white">
+            <div class="max-w-6xl mx-auto px-6" data-section>
+                <div class="text-center mb-10" data-anim>
+                    <h3 class="text-2xl font-extrabold text-gray-900">Why Donate Blood?</h3>
+                    <p class="mt-3 text-gray-600 max-w-2xl mx-auto">Your donation can be the difference between life and
+                        death. Quick, safe, and impactful.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="why-card p-6 rounded-2xl bg-white border border-gray-100 shadow-sm" data-anim>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-14 h-14 rounded-lg bg-[#FFE6EB] text-[#B30024] flex items-center justify-center text-xl">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">One donation saves <span
+                                        class="text-[#B30024]">3 lives</span></div>
+                                <p class="mt-2 text-sm text-gray-600">Support surgeries and emergencies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-card p-6 rounded-2xl bg-white border border-gray-100 shadow-sm" data-anim>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-14 h-14 rounded-lg bg-[#FFE6EB] text-[#B30024] flex items-center justify-center text-xl">
+                                <i class="fas fa-briefcase-medical"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Keeps blood banks ready</div>
+                                <p class="mt-2 text-sm text-gray-600">Critical during emergencies.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-card p-6 rounded-2xl bg-white border border-gray-100 shadow-sm" data-anim>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-14 h-14 rounded-lg bg-[#FFE6EB] text-[#B30024] flex items-center justify-center text-xl">
+                                <i class="fas fa-notes-medical"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Quick & professional</div>
+                                <p class="mt-2 text-sm text-gray-600">Screening and care by experts.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="why-card p-6 rounded-2xl bg-white border border-gray-100 shadow-sm" data-anim>
+                        <div class="flex items-start gap-4">
+                            <div
+                                class="w-14 h-14 rounded-lg bg-[#FFE6EB] text-[#B30024] flex items-center justify-center text-xl">
+                                <i class="fas fa-hand-holding-heart"></i>
+                            </div>
+                            <div>
+                                <div class="font-semibold text-gray-900">Community impact</div>
+                                <p class="mt-2 text-sm text-gray-600">A civic act that unites people.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SPONSORS -->
+        <section id="sponsors" class="py-16 bg-rose-50">
+            <div class="max-w-6xl mx-auto px-6" data-section>
+                <div class="text-center mb-8" data-anim>
+                    <h4 class="text-2xl font-extrabold text-gray-900">Our Supporters</h4>
+                    <p class="text-gray-600 mt-2">We thank our partners for supporting this life-saving drive.</p>
+                </div>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6" id="sponsorGrid">
+                    <div class="p-6 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm sponsor-card"
+                        data-anim>
+                        <!-- <img src="https://via.placeholder.com/160x60?text=Sponsor+1" alt="Sponsor 1"
+                            class="max-h-12 object-contain" /> -->
+                            <h3 class="text-xl font-bold mt-1" style="font-family:Poppins,Inter;">Soon ...</h3>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm sponsor-card"
+                        data-anim>
+                        <!-- <img src="https://via.placeholder.com/160x60?text=Sponsor+2" alt="Sponsor 2"
+                            class="max-h-12 object-contain" /> -->
+                            <h3 class="text-xl font-bold mt-1" style="font-family:Poppins,Inter;">Soon ...</h3>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm sponsor-card"
+                        data-anim>
+                        <!-- <img src="https://via.placeholder.com/160x60?text=Sponsor+3" alt="Sponsor 3"
+                            class="max-h-12 object-contain" /> -->
+                            <h3 class="text-xl font-bold mt-1" style="font-family:Poppins,Inter;">Soon ...</h3>
+                    </div>
+
+                    <div class="p-6 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm sponsor-card"
+                        data-anim>
+                        <!-- <img src="https://via.placeholder.com/160x60?text=Sponsor+3" alt="Sponsor 3"
+                            class="max-h-12 object-contain" /> -->
+                            <h3 class="text-xl font-bold mt-1" style="font-family:Poppins,Inter;">Soon ...</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="video" class="py-20 bg-rose-50">
+            <div class="max-w-5xl mx-auto px-6" data-section>
+                <div class="bg-white rounded-3xl shadow-lg p-8 text-center" data-anim>
+                    <h4 class="text-2xl font-extrabold text-gray-900 mb-6">Glimpse of 2024</h4>
+
+                    <div class="grid grid-cols-1 place-items-center">
+                        <video src="video.mp4" controls
+                            class="rounded-xl border border-gray-100 shadow-sm max-w-md w-full"></video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- GALLERY (same style as sponsors) -->
+        <section id="gallery" class="py-16 bg-white">
+            <div class="max-w-6xl mx-auto px-6" data-section>
+                <div class="text-center mb-8" data-anim>
+                    <h4 class="text-2xl font-extrabold text-gray-900">Gallery</h4>
+                    <p class="text-gray-600 mt-2">Snapshots from previous camps — thank you donors & volunteers.</p>
+                </div>
+
+                <div class="grid gallery-grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="galleryGrid">
+                    <div class="gallery-card p-4 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm"
+                        data-caption="Last year – 1007 units collected">
+                        <img src="image2.jpg" alt="Gallery 1"
+                            class="w-full h-44 object-cover rounded-md" />
+                    </div>
+
+                    <div class="gallery-card p-4 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm"
+                        data-caption="Volunteers & Donors">
+                        <img src="IMG_2950.jpg" alt="Gallery 2"
+                            class="w-full h-44 object-cover rounded-md" />
+                    </div>
+
+                    <div class="gallery-card p-4 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm"
+                        data-caption="Medical Team On-site">
+                        <img src="Copy of IMG_4867.JPG" alt="Gallery 3"
+                            class="w-full h-44 object-cover rounded-md" />
+                    </div>
+
+                    <div class="gallery-card p-4 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm"
+                        data-caption="Registration Desk">
+                        <img src="image.jpg" alt="Gallery 4"
+                            class="w-full h-44 object-cover rounded-md" />
+                    </div>
+
+                    <div class="gallery-card p-4 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm"
+                        data-caption="Post-Donation Care">
+                        <img src="IMG_6072.jpg" alt="Gallery 5"
+                            class="w-full h-44 object-cover rounded-md" />
+                    </div>
+
+                    <div class="gallery-card p-4 rounded-xl bg-white border border-gray-100 flex items-center justify-center shadow-sm"
+                        data-caption="Community Turnout">
+                        <img src="image4.jpg" alt="Gallery 6"
+                            class="w-full h-44 object-cover rounded-md" />
+                    </div>
+                </div>
+
+                <!-- Lightbox -->
+                <div id="lightbox" class="fixed inset-0 z-50 hidden items-center justify-center bg-black/70 p-4">
+                    <div class="max-w-5xl w-full rounded-xl overflow-hidden bg-white">
+                        <div class="relative">
+                            <button id="lightboxClose"
+                                class="absolute right-4 top-4 z-20 bg-white rounded-full p-2 shadow"><i
+                                    class="fas fa-times"></i></button>
+                            <img id="lightboxImg" src="" alt="Lightbox"
+                                class="w-full h-[60vh] object-contain bg-gray-100" />
+                        </div>
+                        <div id="lightboxCaption" class="p-4 text-sm text-gray-700"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section id="faq" class="py-16 bg-rose-50">
+            <div class="max-w-4xl mx-auto px-6" data-section>
+                <div class="text-center mb-6" data-anim>
+                    <h4 class="text-2xl font-extrabold text-gray-900">FAQ</h4>
+                    <p class="mt-2 text-gray-600">Common questions about donating blood</p>
+                </div>
+
+                <div class="space-y-4">
+                    <div class="faq bg-white rounded-xl p-4 shadow-sm" data-anim>
+                        <button class="faq-toggle w-full text-left flex items-start justify-between gap-4">
+                            <div>
+                                <div class="font-semibold">Is blood donation safe?</div>
+                                <div class="text-sm text-gray-500">We follow strict hygiene protocols</div>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-body mt-3 text-gray-700 hidden">Yes — sterile single-use kits are used and
+                            donors are screened by medical staff.</div>
+                    </div>
+
+                    <div class="faq bg-white rounded-xl p-4 shadow-sm" data-anim>
+                        <button class="faq-toggle w-full text-left flex items-start justify-between gap-4">
+                            <div>
+                                <div class="font-semibold">Who can donate?</div>
+                                <div class="text-sm text-gray-500">Basic eligibility</div>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-body mt-3 text-gray-700 hidden">Healthy adults aged 18-65, weighing &gt;50kg,
+                            meeting basic health criteria.</div>
+                    </div>
+
+                    <div class="faq bg-white rounded-xl p-4 shadow-sm" data-anim>
+                        <button class="faq-toggle w-full text-left flex items-start justify-between gap-4">
+                            <div>
+                                <div class="font-semibold">How long does it take?</div>
+                                <div class="text-sm text-gray-500">Time commitment</div>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-body mt-3 text-gray-700 hidden">Total visit ~10–15 minutes; blood collection
+                            about 2–3 minutes.</div>
+                    </div>
+
+                    <div class="faq bg-white rounded-xl p-4 shadow-sm" data-anim>
+                        <button class="faq-toggle w-full text-left flex items-start justify-between gap-4">
+                            <div>
+                                <div class="font-semibold">What to bring?</div>
+                                <div class="text-sm text-gray-500">Documents & essentials</div>
+                            </div>
+                            <i class="fas fa-chevron-down faq-icon"></i>
+                        </button>
+                        <div class="faq-body mt-3 text-gray-700 hidden">Your kind heart.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="bg-white border-t border-gray-100 text-gray-700">
+        <div class="max-w-6xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div>
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-12 h-12 rounded-lg bg-gradient-to-br from-[#B30024] to-[#E60033] flex items-center justify-center text-white">
+                        <i class="fas fa-tint"></i>
+                    </div>
+                    <div>
+                        <div class="font-semibold">27th Annual Blood Donation Camp</div>
+                        <div class="text-sm text-gray-500">Organized by National Service Scheme, RIT</div>
+                    </div>
+                </div>
+
+                <div class="mt-4 text-sm">
+                    <!-- Contact Heading -->
+                    <div class="flex items-center gap-2 mb-2">
+                        <i class="fa-solid fa-phone text-[#B30024]"></i>
+                        <strong>Contact</strong>
+                    </div>
+
+                    <!-- Person 1 -->
+                    <div class="ml-6">
+                        <div class="font-semibold">Vivek</div>
+                        <div class="text-gray-700">+91 7019166613</div>
+                    </div>
+
+                    <!-- Person 2 -->
+                    <div class="ml-6 mt-3">
+                        <div class="font-semibold">Raghuveer</div>
+                        <div class="text-gray-700">+91 8317363569</div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="hidden md:block">
+                <div class="font-semibold mb-2">Quick Links</div>
+                <ul class="text-sm space-y-2">
+                    <li><a href="#chief">Chief Guest</a></li>
+                    <li><a href="#details">Event</a></li>
+                    <li><a href="#register">Register Info</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <div class="font-semibold mb-2">Follow Us</div>
+                <div class="flex items-center gap-3">
+                    <a class="p-2 rounded-md bg-white shadow-sm flex items-center gap-2"
+                        href="https://www.instagram.com/nssmsrit?igsh=MXdjbWdnbjB6b2c4eg==">
+                        <i class="fa-brands fa-instagram text-pink-600"></i>
+                        Instagram
+                    </a>
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="border-t border-gray-100 text-center py-6 text-sm text-gray-500">
+            © <span id="year"></span> 27th Annual Blood Donation Camp — All rights reserved.
+        </div>
+    </footer>
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+    <!-- Custom JS -->
+    <script src="script.js"></script>
+</body>
+
+</html>
