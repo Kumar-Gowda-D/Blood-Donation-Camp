@@ -477,6 +477,40 @@
             </div>
         </section>
 
+
+        <!-- Lucky Draw -->
+        <section id="luckydraw" class="py-20 bg-rose-50">
+    <div class="max-w-5xl mx-auto px-6" data-section>
+        <h2 class="text-4xl font-extrabold text-center text-[#B30024] mb-10" style="font-family:Poppins,Inter;">
+            Check Your Luck
+        </h2>
+
+        <div class="bg-white rounded-3xl shadow-lg p-8" data-anim>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+
+                <div>
+                    <label class="block text-lg font-medium text-[#B30024] mb-3">
+                        Enter Your 4-Digit Ticket Number
+                    </label>
+
+                    <input id="ticketInput"
+                           maxlength="4"
+                           type="number"
+                           class="w-full px-4 py-3 rounded-xl border-2 border-gray-300 focus:border-[#B30024] outline-none transition">
+
+                    <button onclick="checkTicket()" 
+                            class="mt-5 bg-[#B30024] text-white font-semibold px-5 py-3 rounded-xl hover:bg-rose-700 transition">
+                        Check Result
+                    </button>
+
+                    <p id="resultMessage" class="mt-4 text-lg font-semibold"></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
         <section id="live-updates" style="background: #fdecef; padding: 80px 0;">
             <div class="container mx-auto px-6">
 

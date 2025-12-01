@@ -175,5 +175,30 @@ function updateCountdown() {
     document.getElementById("seconds").innerText = seconds;
 }
 
+const winningNumbers = [
+        1231, 1234, 1246, 9846, 7654, 
+        3498, 4321, 9821, 5678, 4646
+    ];
+
+    function checkTicket() {
+        const input = document.getElementById("ticketInput").value.trim();
+        const message = document.getElementById("resultMessage");
+
+        if (input.length !== 4) {
+            message.style.color = "orange";
+            message.innerHTML = "⚠ Please enter a valid 4-digit ticket number.";
+            return;
+        }
+
+        if (winningNumbers.includes(Number(input))) {
+            message.style.color = "green";
+            message.innerHTML = `🎉 Congratulations!, Lucky Donar <br>
+            📞 Please contact us at <strong>+91 9035745753</strong>`;
+        } else {
+            message.style.color = "red";
+            message.innerHTML = `❌ Sorry! Thank You for Registering. Better luck next time!`;
+        }
+    }
+
 setInterval(updateCountdown, 1000);
 updateCountdown();
